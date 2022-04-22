@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row" *ngFor="let about of aboutUs">
+    <h1>{{about.title | uppercase}}</h1>
+    <div class="col">
+      <div class="imgWrapper">
+        <img [src]="about.image" alt="">
+      </div>
+    </div>
+    <div class="col">
+      <p>{{about.description}}</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div *ngFor="let about of aboutUs">
+  <h1>{{about.title}}</h1>
+  <p>{{about.description}}</p>
+</div> -->
